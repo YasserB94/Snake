@@ -1,58 +1,7 @@
-/*Resets*/
-*,*::after,*::before{
-    box-sizing: border-box;
+*,*::before,*::after{
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
-:root{
-    /*Colors*/
-    --clr-black:#0C120C;
-    --clr-white:#EDE6F2;
-    --clr-yellow:#E2C044;
-    --clr-red:#FF1053;
-    --clr-green:#33673B;
-}
-
-body{
-    max-height: 100vh;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-}
-header,footer{
-    background-color: var(--clr-green);
-    color: var(--clr-yellow);
-    text-align: center;
-    padding: 1rem 0;
-    width: 100vw;
-}
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
-.game-board{
-    height: 80vmin;
-    width: 80vmin;
-    background-color: var(--clr-white);
-    display: grid;
-    grid-template-columns: repeat(40,1fr);
-    grid-template-rows: repeat(40,1fr);
-}
-.snake{
-    background-color: var(--clr-yellow);
-    border: .25rem solid #33673B;
-}
-.food{
-    background-color:var(--clr-red);
-    border: .25rem solid #E2C044;
-    border-radius: .25rem;
-}
-footer{
-    margin-top: auto;
+    list-style: none;
+    box-sizing: border-box;
 }
