@@ -1,7 +1,18 @@
+/*-----START-----GLOBAL-RESETS-----*/
 *,*::before,*::after{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+/*-----END-----GLOBAL-RESETS-----*/
+:root{
+    /*-----THEME-----*/
+        /*--Colors--*/
+        --clr-black:#0D120C;
+        --clr-white:#ECE6F1;
+        --clr-primary:#40663F;
+        --clr-secondary:#DCC25B;
+        --clr-highlight:#EA3757;
 }
