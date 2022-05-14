@@ -40,3 +40,8 @@ This project was started as a learning curve to increase my understanding of jav
    - [ ] Place reserved for bloglike content about the creation ?
      - Kind of have the rest of the page for this ?
 
+- [ ] add a gameloop
+  - [ ] The gameloop updates the logic
+  - [ ] Displays the logic on the board
+  - [ ] Is controlled by a play/pause button in the controls center
+     - [ ]First time button says start, then play/pause, when the game is over it says start again
