@@ -2,9 +2,9 @@
 This project was started as a learning curve to increase my understanding of javascript ES6
 
 ## Goals ##
-- [ ] Create a basic site layout to house the game
-  - [ ] Use of CSS grid to house the game and the main sections
-- [ ] Create a X by X CSS grid gameboard where the game can be played
+- [X] Create a basic site layout to house the game
+  - [X] Use of CSS grid to house the game and the main sections
+- [X] Create a X by X CSS grid gameboard where the game can be played
 - [ ] Create Basic Snake game
   - #### Snake ####
     - [ ] Draw the snake on the board
@@ -22,12 +22,21 @@ This project was started as a learning curve to increase my understanding of jav
 ## Roadmap ##
 - [X] Create a basic layout for the site 
 ![site layout image](./documentationImages/snakeSiteLayout.webp)
-- [ ] Create the HTML
-- [ ] Use CSS Grid to achieve the inner site layout
-- [ ] Have a CSS grid for the gameboard *20x20 ? 40x40 ?*
-- [ ] Reserve some space to turn it into an actual website
-   - [ ] Place to create a nav
-   - [ ] Place reserved for header
-   - [ ] Place reserved for footer
+- [X] Create the HTML
+- [X] Use CSS Grid to achieve the inner site layout
+  - Overruled this idea, added a game container that uses css Grid to house a control, info and gameboard panel
+![site layout image with html and css](./documentationImages/siteLayoutGameGrid.png)
+- [X] Have a CSS grid for the gameboard *20x20 ? 40x40 ?*
+  - CSS grid is amazing ?
+![gameBoard with CSS grid 20x20](./documentationImages/gameBoardGrid.png)
+  - [This](https://cssgrid-generator.netlify.app) is such a usefull tool untill I wrap my head around it
+  - Added the CSS aspect ratio 1/1 so it's always a square shape
+  - Added a max height so it doesn't overflow outside of the window
+        - Nobody likes vertical scrollbars, right ?
+- [X] Reserve some space to turn it into an actual website
+   - [X] Place to create a nav
+   - [X] Place reserved for header
+   - [X] Place reserved for footer
    - [ ] Place reserved for bloglike content about the creation ?
+     - Kind of have the rest of the page for this ?
 
