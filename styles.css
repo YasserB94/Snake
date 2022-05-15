@@ -116,6 +116,13 @@ main{
     grid-template-columns: repeat(20,1fr);
     grid-template-rows: repeat(20,1fr);
 }
+.game-board .snake-head,.snake-tail,.snake-body{
+    background-color: var(--clr-secondary);
+    border-color: var(--clr-highlight);
+    border-style: solid;
+    border-width: .075rem;
+}
+
 /*---END SNAKE--*/
 footer{
     background-color: var(--clr-primary);
