@@ -40,8 +40,30 @@ This project was started as a learning curve to increase my understanding of jav
    - [ ] Place reserved for bloglike content about the creation ?
      - Kind of have the rest of the page for this ?
 
-- [ ] add a gameloop
-  - [ ] The gameloop updates the logic
-  - [ ] Displays the logic on the board
-  - [ ] Is controlled by a play/pause button in the controls center
-     - [ ]First time button says start, then play/pause, when the game is over it says start again
+- [X] add a gameloop
+  - This code asks the browser in ms when the function can be ran
+    ```    
+    window.requestAnimationFrame(snakeGame);
+    ```
+  - By saving the previous outtome, we can calculate how long it has been since the fucntion last ran
+    ```
+        const secondsSinceLastRan = (currentTime - lastTimeSnakeGameFuncExecuted) / 1000;
+```
+  - Now we can make the function exit if it has not been long enough 
+  ```    
+  if (secondsSinceLastRan < 1 / game_speed) return;
+  ```
+  - To control the speed of the game easely we use a variable called game_speed the higher it's value the more times per second the function gets ran
+    - If it has ran within the last second / amount of frames per second i want to happen, exit the function. if not execute the rest 
+    ```
+    function snakeGame(currentTime) {
+    window.requestAnimationFrame(snakeGame);
+    const secondsSinceLastRan = (currentTime - lastTimeSnakeGameFuncExecuted) / 1000;
+    if (secondsSinceLastRan < 1 / game_speed) return;
+    console.log('-----Frame ran------')
+}```
+  - Ask the game when the funciton can be ran
+  - See if it has ran the specified times in the last second
+  - if not run a frame
+
+
